@@ -19,7 +19,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%); color: var(--text);
   font: 17px/1.6 -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  min-height: 100vh;
+  min-height: 100vh; overflow-wrap: break-word;
 }
 .wrap { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
 header.hero { text-align: center; padding: 24px 0 8px; }
@@ -35,7 +35,7 @@ p, li { color: var(--text); }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
 .card h3 { margin: 0 0 6px; font-size: 17px; }
 .card p { margin: 0; color: var(--muted); font-size: 15px; }
-nav.top { display: flex; gap: 18px; justify-content: center; font-size: 15px; margin-bottom: 8px; }
+nav.top { display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: center; font-size: 15px; margin-bottom: 8px; }
 nav.top a, footer a { color: var(--primary); text-decoration: none; }
 footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; text-align: center; }
 .lang { display: flex; gap: 10px; justify-content: flex-end; font-size: 14px; }
